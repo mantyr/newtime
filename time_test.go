@@ -2,7 +2,6 @@ package newtime
 
 import (
     "testing"
-    "fmt"
 )
 
 func TestParseDateStringZero(t *testing.T) {
@@ -20,7 +19,6 @@ func TestParseDateString(t *testing.T) {
     date.Parse("2014.05.12", "yyyy.dd.mm")
 
     val := date.Format("YYYY-mm-dd")
-    fmt.Println("OK", val)
     if val != "2014-12-05" {
         t.Errorf("Error date in Format, %q", val)
     }
