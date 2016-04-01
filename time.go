@@ -49,9 +49,7 @@ func (t *Time) SetUnix(sec int64, nsec int64) *Time {
     return t
 }
 
-/**
- * t.Parse("12 января 2016", "dd mm YYYY", []string{"---", "января", "февраля", "марта", ...}, []string{"---", "январь", "февраль", "март", ...})
- */
+// Example: t.Parse("12 января 2016", "dd mm YYYY", []string{"---", "января", "февраля", "марта", ...}, []string{"---", "январь", "февраль", "март", ...})
 func (t *Time) Parse(date, format string, params ...[]string) *Time {
     date   = runner.Trim(date)
     format = ParseDateFormat(format)
