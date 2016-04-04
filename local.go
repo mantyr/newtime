@@ -16,7 +16,7 @@ func (t *Time) SetUTC() *Time {
 }
 
 func (t *Time) SetPST() *Time {
-    t.SetLocal("PST")
+    t.SetLocal("PST8PDT")
     return t
 }
 
