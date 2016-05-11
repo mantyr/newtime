@@ -82,6 +82,11 @@ func (t *Time) ParseRaw(date, format string) *Time {
     return t
 }
 
+func (t *Time) Add(d time.Duration) *Time {
+    t.Time = t.Time.Add(d)
+    return t
+}
+
 func (t *Time) LastDurationDate(params ...time.Time) time.Duration {
     var this time.Time
     if len(params) > 0 {

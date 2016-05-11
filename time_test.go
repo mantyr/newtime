@@ -2,6 +2,7 @@ package newtime
 
 import (
     "testing"
+    "time"
 )
 
 func TestParseDateStringZero(t *testing.T) {
@@ -191,5 +192,25 @@ func TestParse(t *testing.T) {
         if val != test.result {
             t.Errorf("%s expected %q got %q", test.name, test.result, val)
         }
+    }
+}
+
+func TestAdd(t *testing.T) {
+    date := NewTime()
+    date.SetMoscow()
+    date.Parse("2016-05-11 12:15:32", "YYYY-mm-dd HH:ii:ss")
+
+    date.Add(time.Second)
+
+    val := date.Format("YYYY-mm-dd HH:ii:ss")
+    if val != "2016-05-11 12:15:33" {
+        t.Errorf("Error Add(), %q", val)
+    }
+
+    date.Add(-1 * time.Second)
+
+    val = date.Format("YYYY-mm-dd HH:ii:ss")
+    if val != "2016-05-11 12:15:32" {
+        t.Errorf("Error Add(), %q", val)
     }
 }
