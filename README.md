@@ -1,9 +1,9 @@
 # Golang time/date Object
 
-[![Build Status][build_status_image]][build_status] 
-[![GoDoc][godoc_image]][godoc] 
-[![Go Report Card][goreport_image]][goreport] 
-[![Software License][license_image]](LICENSE.md)
+[![Build Status](https://travis-ci.org/mantyr/newtime.svg?branch=master)][build_status] 
+[![GoDoc](https://godoc.org/github.com/mantyr/newtime?status.png)][godoc] 
+[![Go Report Card](https://goreportcard.com/badge/github.com/mantyr/newtime)][goreport] 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 
 This stable version
 
@@ -41,14 +41,7 @@ func main() {
 [mantyr]: https://github.com/mantyr
 
 
-[build_status]:       https://travis-ci.org/mantyr/newtime
-[build_status_image]: https://travis-ci.org/mantyr/newtime.svg?branch=master
-
-[godoc]:              http://godoc.org/github.com/mantyr/newtime
-[godoc_image]:        https://godoc.org/github.com/mantyr/newtime?status.png
-
-[goreport]:           https://goreportcard.com/report/github.com/mantyr/newtime
-[goreport_image]:     https://goreportcard.com/badge/github.com/mantyr/newtime
-
-[license_image]:      https://img.shields.io/badge/license-MIT-brightgreen.svg
+[build_status]: https://travis-ci.org/mantyr/newtime
+[godoc]:        http://godoc.org/github.com/mantyr/newtime
+[goreport]:     https://goreportcard.com/report/github.com/mantyr/newtime
 
