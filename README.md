@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mantyr/newtime.svg?branch=master)][build_status] 
 [![GoDoc](https://godoc.org/github.com/mantyr/newtime?status.png)][godoc] 
-[![Go Report Card](https://goreportcard.com/badge/github.com/mantyr/newtime)][goreport] 
+[![Go Report Card](https://goreportcard.com/badge/github.com/mantyr/newtime?v=2)][goreport] 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 
 This stable version
